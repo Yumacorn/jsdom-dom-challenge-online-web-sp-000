@@ -6,7 +6,7 @@ let clock = setInterval(countUp, 1000);
 let likeButton = document.getElementById("heart");
 let commentForm = document.getElementById("comment-form");
 let likes = document.querySelector(".likes");
-let likeLog = {};
+var likeLog = {};
 
 
 document.addEventListener('DOMContentLoaded', (e) => {
@@ -61,7 +61,6 @@ likeButton.addEventListener('click', (e) => {
 
     y.innerHTML = `${counter.innerHTML} has been liked 1 time`;
     likes.append(y);
-    
     // let comment = document.getElementById('comment-input').value;
     // let x  = document.createElement("LI");
     // x.innerHTML = comment;
